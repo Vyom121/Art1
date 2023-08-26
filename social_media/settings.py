@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'social_media.wsgi.application'
 
-
+CSRF_TRUSTED_ORIGINS = ['https://artsocial.azurewebsites.net']
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
