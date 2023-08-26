@@ -78,9 +78,15 @@ WSGI_APPLICATION = 'social_media.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'application_database',
+        'USER': 'vys',
+        'PASSWORD': 'vyom@1802',
+        'HOST': 'arts1.mysql.database.azure.com',
+        'PORT': '3306',
+        'OPTIONS': {'ssl': True}
     }
+    
 }
 
 
