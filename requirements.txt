@@ -3,4 +3,4 @@ django_embed_video==1.4.4
 numpy==1.23.1
 requests==2.28.1
 whitenoise
-
+mysqlclient==2.2.0
