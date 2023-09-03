@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from storages.backends.azure_storage import AzureStorage
+
+DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+AZURE_ACCOUNT_NAME = 'djangomedia1'
+AZURE_CONTAINER = 'media'
+AZURE_ACCOUNT_KEY='FJdkBTDuVrAPBOdTr3qS8xazGfquVZL91bfujHXhoUhueXTTH/axLVnXPzSZfg8WrIE1Vw6wPdcE+AStzw9obA=='
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
