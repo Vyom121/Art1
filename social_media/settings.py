@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-6(13n&q1@1f5(f2ez6$-nzdznt)22kxe*p=)#9-e%jhmnz001l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['artsocial.azurewebsites.net']
 
 
 # Application definition
@@ -102,7 +102,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'vys2121209@sicsr.ac.in'
 EMAIL_HOST_PASSWORD = 'ganesha@#1'
-PASSWORD_RESET_EMAIL_TEMPLATE='\\templates\\registration\\password_reset_email.html'
+
 
 
 
