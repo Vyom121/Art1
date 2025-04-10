@@ -14,10 +14,10 @@ from pathlib import Path
 import os
 from storages.backends.azure_storage import AzureStorage
 
-DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
-AZURE_ACCOUNT_NAME = 'djangomedia1'
-AZURE_CONTAINER = 'media'
-AZURE_ACCOUNT_KEY='FJdkBTDuVrAPBOdTr3qS8xazGfquVZL91bfujHXhoUhueXTTH/axLVnXPzSZfg8WrIE1Vw6wPdcE+AStzw9obA=='
+DEFAULT_FILE_STORAGE = ''
+AZURE_ACCOUNT_NAME = ''
+AZURE_CONTAINER = ''
+AZURE_ACCOUNT_KEY=''
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-6(13n&q1@1f5(f2ez6$-nzdznt)22kxe*p=)#9-e%jhmnz001l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
 
-ALLOWED_HOSTS = ['*','artsocial.azurewebsites.net']
+ALLOWED_HOSTS = ['*','']
 
 
 # Application definition
@@ -85,11 +85,11 @@ CSRF_TRUSTED_ORIGINS = ['https://artsocial.azurewebsites.net']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'application_database',
-        'USER': 'vys',
-        'PASSWORD': 'vyom@1802',
-        'HOST': 'arts1.mysql.database.azure.com',
+        'ENGINE': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '3306',
         'OPTIONS': {'ssl': True}
     }
@@ -100,8 +100,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'vys2121209@sicsr.ac.in'
-EMAIL_HOST_PASSWORD = 'ganesha@#1'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 
 
